@@ -8,25 +8,16 @@
 define("CONF_DB_HOST", "localhost");
 define("CONF_DB_USER", "root");
 define("CONF_DB_PASS", "");
-define("CONF_DB_NAME", "db_peixes");
+define("CONF_DB_NAME", "db_museum");
 
 //
 // ─── URL ────────────────────────────────────────────────────────────────────────
 //
 
     
-define("CONF_URL_BASE", "https://www.sistemadepeixes.com");
-define("CONF_URL_TEST", "https://www.localhost/sistema-de-peixes");
+define("CONF_URL_BASE", "https://www.sistemamuseu.com");
+define("CONF_URL_TEST", "https://www.localhost/sistema-museu");
 define("CONF_URL_ADMIN", "/admin");
-
-//
-// ─── SITE ───────────────────────────────────────────────────────────────────────
-//
-
-    
-define("CONF_SITE_NAME", "UpInside");
-define("CONF_SITE_LANG", "pt_BR");
-define("CONF_SITE_DOMAIN", "upinside.com.br");
 
 
 //
@@ -95,7 +86,7 @@ define("CONF_MAIL_HOST", "");
 define("CONF_MAIL_PORT", "");
 define("CONF_MAIL_USER", "");
 define("CONF_MAIL_PASS", "");
-define("CONF_MAIL_SENDER", ["name" => "Laboratório Biologia", "address" => "laboratoriobiologiaifjf@gmail.com"]);
+define("CONF_MAIL_SENDER", ["name" => "Museu do Computador", "address" => "museudocomputador@gmail.com"]);
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
 define("CONF_MAIL_OPTION_AUTH", true);
