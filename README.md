@@ -1,7 +1,7 @@
-# Sistema do Museu
-Sistema do museu do Computador do IF Sudeste MG Campus Juiz de Fora
+# Sistema de Peixes
+Sistema Open Source do controle de peixes do laboratório de Biologia do IF Sudeste MG Campus Juiz de Fora
 
-## Tecnologias
+### Tecnologias
 
 - PHP
 - Composer

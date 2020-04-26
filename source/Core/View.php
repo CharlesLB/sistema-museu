@@ -23,7 +23,7 @@ class View
     {
         return $this->engine->render($templateName, $data);
     }
-    
+
     public function engine(): Engine
     {
         return $this->engine();
