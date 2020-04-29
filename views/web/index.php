@@ -33,6 +33,10 @@
         <a href="/acervo" class="transparent-button">Ver acervo</a>
     </header>
 
+    <section class="introduction">
+        
+    </section>
+
     <footer>
         <div class="footer" id="footer">
             <div class="container">
