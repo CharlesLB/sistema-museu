@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/globals.css">
+    <link rel="stylesheet" href="../assets/css/style.css?version=3">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <title>Museu do Computador</title>
 </head>
 
 <body>
-    
+    <nav>
+        <a href="#"></a>
+    </nav>
    
     <footer>
         <div class="footer" id="footer">
