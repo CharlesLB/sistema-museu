@@ -4,17 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/globals.css">
-    <link rel="stylesheet" href="../assets/css/style.css?version=3">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/globals.css?version=5">
+    <link rel="stylesheet" href="../assets/css/style.css?version=978">
+    <script src="../assets/js/icons.js"></script>
     <title>Museu do Computador</title>
 </head>
 
 <body>
-    <nav>
-        <a href="#"></a>
+    <nav class="navbar">
+        <div class="margin brand">
+            <a href="/">M<span>C</span></a>
+        </div>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/acervo">Acervo</a>
+            <a href="/doacao">Doação</a>
+        </div>
+
+        <div class="margin">
+            <button><i class="fas fa-bars"></i></button>
+        </div>
+
     </nav>
-   
+
+    <header class="header">
+        <h1>Museu do Computador</h1>
+        <a href="/acervo" class="transparent-button">Ver acervo</a>
+    </header>
+
     <footer>
         <div class="footer" id="footer">
             <div class="container">
@@ -23,7 +41,7 @@
                         <h4> Museu do Computador </h4>
                     </div>
                     <div class="col-lg-3 col-sm-2 col-xs-3">
-                        <h3> Contact </h3>
+                        <h3> Contato </h3>
                         <ul>
                             <li><a class="email" href="#">museudocomputadorif@gmail.com</a></li>
                             <br />
