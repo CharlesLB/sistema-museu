@@ -1,75 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/globals.css?version=5">
-    <link rel="stylesheet" href="../assets/css/style.css?version=978">
-    <script src="../assets/js/icons.js"></script>
-    <title>Museu do Computador</title>
+	<title>Sistema do Museu</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css?version=1" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body>
-    <nav class="navbar">
-        <div class="margin brand">
-            <a href="/">M<span>C</span></a>
-        </div>
+<body class="homepage is-preload">
+	<div id="page-wrapper">
+		<div id="header">
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#contact" class="scrolly">Doação</a></li>
+					<li><a href="right-sidebar.html">Acervo</a></li>
+				</ul>
+			</nav>
 
-        <div>
-            <a href="/">Home</a>
-            <a href="/acervo">Acervo</a>
-            <a href="/doacao">Doação</a>
-        </div>
+			<div class="inner">
+				<header>
+					<h1><a href="index.html" id="logo">Museu do computador</a></h1>
+					<hr />
+					<p>O acervo de informática do IF Sudeste MG Campus Juiz de Fora</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button circled scrolly">Conhecer</a>
+				</footer>
+			</div>
 
-        <div class="margin">
-            <button><i class="fas fa-bars"></i></button>
-        </div>
 
-    </nav>
+		</div>
 
-    <header class="header">
-        <h1>Museu do Computador</h1>
-        <a href="/acervo" class="transparent-button">Ver acervo</a>
-    </header>
+		<section id="banner">
+			<header>
+				<h2>Conheça o <strong>Museu do Computador</strong>.</h2>
+				<p>
+					O museu do <a href="https://www.ifsudestemg.edu.br/juizdefora">IF Sudeste MG Campus Juiz de Fora</a>.
+					Veja abaixo algumas das peças de nosso vasto acervo
+				</p>
+			</header>
+		</section>
 
-    <section class="introduction">
-        
-    </section>
+		<section class="carousel">
+			<div class="reel">
 
-    <footer>
-        <div class="footer" id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <h4> Museu do Computador </h4>
-                    </div>
-                    <div class="col-lg-3 col-sm-2 col-xs-3">
-                        <h3> Contato </h3>
-                        <ul>
-                            <li><a class="email" href="#">museudocomputadorif@gmail.com</a></li>
-                            <br />
-                            <li>
-                                <p> IF Sudeste MG Campus Juiz de Fora</p>
-                            </li>
-                            <li>
-                                <p> R. Bernardo Mascarenhas, 1283 - Fábrica, Juiz de Fora - MG, 36080-001</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <p class="pull-left copyright"> <a href="https://github.com/CharlesLB" target="_blank">@CharlesLB </a></p>
+				<article>
+					<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Nome da peça</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
 
-                </div>
-            </div>
-    </footer>
+				<article>
+					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Nome da peça</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+				<article>
+					<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Ultrices urna sit lobortis</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Varius magnis sollicitudin</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Pulvinar sagittis congue</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Fermentum sagittis proin</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Ultrices urna sit lobortis</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+				<article>
+					<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Varius magnis sollicitudin</a></h3>
+					</header>
+					<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+				</article>
+
+			</div>
+
+			<footer class="center">
+				<a href="#" class="button">Conhecer todo o nosso acervo</a>
+			</footer>
+		</section>
+
+		<section class="section">
+			<header class="container">
+				<h2>O <strong>Museu do Computador</strong> precisa de você.</h2>
+				<p>
+					Caso possua uma peça de informática antiga que enriqueceria nosso acervo e está disposto a doar, entre em contato clicando no botão abaixo.
+				</p>
+			</header>
+			<footer class="center">
+				<a href="#contact" class="button scrolly">Doar uma peça</a>
+			</footer>
+		</section>
+
+
+
+		<!-- Main -->
+		<div class="wrapper style2">
+			<article id="main" class="container special">
+				<header>
+					<h2>E venha no conhecer!</h2>
+					<p>
+						Ficamos aberto terça e quinta-feira das 14:00 às 18:00 horas!
+					</p>
+				</header>
+				<div class="image featured"><img src="images/pic06.jpg" alt="" /></div>
+			</article>
+		</div>
+
+		<section id="contact">
+
+		</section>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<hr />
+				<div class="row">
+					<div class="col-12">
+
+						<!-- Contact -->
+						<section class="contact">
+							<header>
+								<h3>Museu do Computador</h3>
+							</header>
+							<p>Um projeto do IF Sudeste MG Campus Juiz de Fora</p>
+						</section>
+
+						<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li><a href="https://github.com/CharlesLB">@CharlesLB</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
