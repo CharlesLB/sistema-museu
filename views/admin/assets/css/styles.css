@@ -56,6 +56,7 @@ li{
   position: fixed;
   background: var(--bg-primary);
   transition: var(--trasition-speed);
+  z-index: 1;
 }
 
 .my-admin-navbar .my-navbar-nav {
@@ -175,6 +176,51 @@ main {
 
 .my-central-navbar .my-nav-item:hover {
   color: var(--text-secondary);
+}
+
+/*
+ * ─── CARDS ──────────────────────────────────────────────────────────────────────
+ */
+
+main .my-container{
+  display: grid;
+  padding: 10px;
+  flex-direction: row;
+  z-index: 0;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .items{
+  min-height: 300px;
+  min-width: 300px;
+  border: solid 5px var(--text-primary);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: var(--trasition-speed);
+}
+
+main .items .quantity{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+main .items p{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+main .items:hover{
+  color: var(--bg-secondary);
+  border-color: var(--bg-secondary);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
 }
 
 /*

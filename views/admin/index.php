@@ -49,12 +49,10 @@
         <div class="my-nav-item my-dropdown">
             <div class="dropdown">
                 <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span><i class="fas fa-bell"></i></span>
+                    <span><i class="fas fa-bell"></i></span> <span class="my-notifications-quantity">1</span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Nenhuma notificação</a>
                 </div>
             </div>
         </div>
@@ -62,11 +60,127 @@
         <span class="my-nav-item"><i class="fas fa-power-off"></i></span>
     </nav>
     <main>
-        <h1>Aqui estarão as coisas e o menu do lado está no :hover</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias iste, eos laudantium voluptate dolorum repellendus dolores, non harum dolor, obcaecati incidunt. Dolorum unde sequi nostrum voluptatum veniam iure molestias.</p> <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias iste, eos laudantium voluptate dolorum repellendus dolores, non harum dolor, obcaecati incidunt. Dolorum unde sequi nostrum voluptatum veniam iure molestias.</p> <br>
-        <div class="dropdown-menu">
-            <a class="dropdown-item active" href="#">Text</a>
+        <div class="my-container">
+            <a href="##" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">45</span>
+                </div>
+                <div class="project-name">
+                    <p>Computador</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">30</span>
+                </div>
+                <div class="project-name">
+                    <p>Retroprojetor</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">15</span>
+                </div>
+                <div class="project-name">
+                    <p>Vídeo Games</p>
+                </div>
+            </a>
+            <a href="##" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">45</span>
+                </div>
+                <div class="project-name">
+                    <p>Computador</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">30</span>
+                </div>
+                <div class="project-name">
+                    <p>Retroprojetor</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">15</span>
+                </div>
+                <div class="project-name">
+                    <p>Vídeo Games</p>
+                </div>
+            </a>
+            <a href="##" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">45</span>
+                </div>
+                <div class="project-name">
+                    <p>Computador</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">30</span>
+                </div>
+                <div class="project-name">
+                    <p>Retroprojetor</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">15</span>
+                </div>
+                <div class="project-name">
+                    <p>Vídeo Games</p>
+                </div>
+            </a>
+            <a href="##" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">45</span>
+                </div>
+                <div class="project-name">
+                    <p>Computador</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">30</span>
+                </div>
+                <div class="project-name">
+                    <p>Retroprojetor</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">15</span>
+                </div>
+                <div class="project-name">
+                    <p>Vídeo Games</p>
+                </div>
+            </a>
+            <a href="##" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">45</span>
+                </div>
+                <div class="project-name">
+                    <p>Computador</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">30</span>
+                </div>
+                <div class="project-name">
+                    <p>Retroprojetor</p>
+                </div>
+            </a>
+            <a href="#" class="items">
+                <div class="icon-wrapper">
+                    <span class="quantity">15</span>
+                </div>
+                <div class="project-name">
+                    <p>Vídeo Games</p>
+                </div>
+            </a>
         </div>
     </main>
 
