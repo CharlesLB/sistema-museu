@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css?version=2">
+    <link rel="stylesheet" href="assets/css/styles.css?version=3">
     <link rel="icon" href="assets/images/icon.ico" type="image/x-icon" />
     <script src="assets/js/icons.js"></script>
     <title>Administrando o museu</title>
@@ -28,12 +28,6 @@
                 <a href="#" class="my-nav-link">
                     <span class="my-link-icon"><i class="fas fa-ethernet"></i></span>
                     <span class="my-link-text">Peças</span>
-                </a>
-            </li>
-            <li class="my-nav-item">
-                <a href="#" class="my-nav-link">
-                    <span class="my-link-icon"><i class="fas fa-book"></i></span>
-                    <span class="my-link-text">Biblioteca</span>
                 </a>
             </li>
             <li class="my-nav-item">
@@ -65,42 +59,58 @@
         <span class="my-nav-item"><i class="fas fa-user-edit"></i></span>
         <span class="my-nav-item"><i class="fas fa-power-off"></i></span>
     </nav>
-
     <main>
         <div class="my-table-container">
             <div class="my-table-header">
                 <div id="left">
-                    <h3>Notificações</h3>
+                    <h3>Acervo: categoria</h3>
+                </div>
+                <div id="right">
+                    <button type="submit"><i class="fas fa-plus"></i></button>
+                    <input type="text" id="search">
+                    <button type="submit"><span class="search-icon"><i class="fas fa-search"></i></span></button>
                 </div>
             </div>
             <div class="my-table">
                 <table class="table table-hover">
-                    <a href="###" class="my-notification">
-                        <div class="notification-id">
-                            #1
-                        </div>
-                        <div class="notification-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum iusto in ea tempora voluptas. Non quasi aliquid quis labore illo! Debitis mollitia quis non quia eaque voluptates consequuntur asperiores!
-                        </div>
-                    </a>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td><button class="btn btn-primary"><i class="fas fa-edit"></i></button></td>
+                            <td><button class="btn btn-primary"><i class="fas fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td><button class="btn btn-primary"><i class="fas fa-edit"></i></button></td>
+                            <td><button class="btn btn-primary"><i class="fas fa-trash"></i></button></td>
 
-                    <a href="###" class="my-notification">
-                        <div class="notification-id">
-                            #2
-                        </div>
-                        <div class="notification-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum iusto in ea tempora voluptas. Non quasi aliquid quis labore illo! Debitis mollitia quis non quia eaque voluptates consequuntur asperiores!
-                        </div>
-                    </a>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td><button class="btn btn-primary"><i class="fas fa-edit"></i></button></td>
+                            <td><button class="btn btn-primary"><i class="fas fa-trash"></i></button></td>
 
-                    <a href="###" class="my-notification">
-                        <div class="notification-id">
-                            #3
-                        </div>
-                        <div class="notification-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum iusto in ea tempora voluptas. Non quasi aliquid quis labore illo! Debitis mollitia quis non quia eaque voluptates consequuntur asperiores!
-                        </div>
-                    </a>
+                        </tr>
+                    </tbody>
                 </table>
                 <nav class="my-paginator">
                     <div class="my-left-paginator">
