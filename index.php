@@ -1,35 +1,39 @@
 <?php
-ob_start();
+
+ob_flush();
 
 require __DIR__ . "/vendor/autoload.php";
 
-use Source\Core\Session;
 use CoffeeCode\Router\Router;
 
-$session = new Session();
-$route = new Router(url(), ":");
-
-
-//
-// ─── ROUTES ──────────────────────────────────────────────────────────────────────
-//
+$route = new Router(url());
 
 $route->namespace("Source\Controllers");
-$route->get("/", "Web:index");
-
-$route->namespace("Source\Controllers")->group("/admin");
-$route->get("/", "Admin:index");
-
-$route->namespace("Source\Controllers")->group("/error");
-$route->get("/{errcode}", "Web:error");
 
 //
-// ─── DISPATCH ───────────────────────────────────────────────────────────────────
+// ─── WEB ────────────────────────────────────────────────────────────────────────
+//
+
+
+$route->group(null);
+$route->get("/", "Web:home", "web.home");
+
+
+
+//
+// ─── ERROR ──────────────────────────────────────────────────────────────────────
+//
+
+$route->group("error");
+$route->get("/{errcode}", "Web:error", "web.error");
+
+//
+// ─── PROCESS ────────────────────────────────────────────────────────────────────
 //
 
 $route->dispatch();
 
-if($route->error()){
+if ($route->error()){
     $route->redirect("/error/{$route->error()}");
 }
 
