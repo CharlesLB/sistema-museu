@@ -4,32 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "826e9fb83e6eef38cd85bb1c76960c04",
+    "content-hash": "7b0f6079cafb38ff2ab9bd6538c9f7b1",
     "packages": [
         {
-            "name": "coffeecode/cropper",
-            "version": "1.2.3",
+            "name": "coffeecode/datalayer",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/robsonvleite/cropper.git",
-                "reference": "25c5e048a41cdd3065e38f73c8a30d9aa8e8e5d0"
+                "url": "https://github.com/robsonvleite/datalayer.git",
+                "reference": "17fecff8edb8fb5287648875f182acbb80389614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robsonvleite/cropper/zipball/25c5e048a41cdd3065e38f73c8a30d9aa8e8e5d0",
-                "reference": "25c5e048a41cdd3065e38f73c8a30d9aa8e8e5d0",
+                "url": "https://api.github.com/repos/robsonvleite/datalayer/zipball/17fecff8edb8fb5287648875f182acbb80389614",
+                "reference": "17fecff8edb8fb5287648875f182acbb80389614",
                 "shasum": ""
             },
             "require": {
-                "ext-fileinfo": "*",
-                "ext-gd": "*",
-                "ext-mbstring": "*",
+                "ext-pdo": "*",
                 "php": "^7.2"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "CoffeeCode\\Cropper\\": "src"
+                    "CoffeeCode\\DataLayer\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -43,16 +41,19 @@
                     "role": "Developer"
                 }
             ],
-            "description": "It is a easy and simple PHP image cropper and cache thumb manager",
+            "description": "The data layer is a persistent abstraction component of your database that PDO",
             "homepage": "http://www.upinside.com.br",
             "keywords": [
                 "Coffeecode",
-                "image cache",
-                "image crop",
-                "image thumb",
-                "upload"
+                "crud",
+                "database",
+                "delete",
+                "destroy",
+                "pdo",
+                "save",
+                "upinside"
             ],
-            "time": "2020-04-16T14:56:01+00:00"
+            "time": "2019-10-29T13:34:17+00:00"
         },
         {
             "name": "coffeecode/optimizer",
@@ -104,50 +105,6 @@
             "time": "2019-03-12T14:37:11+00:00"
         },
         {
-            "name": "coffeecode/paginator",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/robsonvleite/paginator.git",
-                "reference": "98b6a42ab7ee4a9ec08faa37e5cfb0a073143d2d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/robsonvleite/paginator/zipball/98b6a42ab7ee4a9ec08faa37e5cfb0a073143d2d",
-                "reference": "98b6a42ab7ee4a9ec08faa37e5cfb0a073143d2d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "CoffeeCode\\Paginator\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Robson V. Leite",
-                    "email": "cursos@upinside.com.br",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Paginator is simple and is ready to generate results navigation in your application",
-            "homepage": "http://www.upinside.com.br",
-            "keywords": [
-                "Coffeecode",
-                "pagination",
-                "paginator",
-                "upinside"
-            ],
-            "time": "2019-03-12T14:38:13+00:00"
-        },
-        {
             "name": "coffeecode/router",
             "version": "1.0.7",
             "source": {
@@ -191,60 +148,6 @@
                 "upinside"
             ],
             "time": "2019-09-30T16:29:47+00:00"
-        },
-        {
-            "name": "coffeecode/uploader",
-            "version": "1.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/robsonvleite/uploader.git",
-                "reference": "0a85f2d44115741e5e978c2430d8d9997fd44be7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/robsonvleite/uploader/zipball/0a85f2d44115741e5e978c2430d8d9997fd44be7",
-                "reference": "0a85f2d44115741e5e978c2430d8d9997fd44be7",
-                "shasum": ""
-            },
-            "require": {
-                "ext-exif": "*",
-                "ext-gd": "*",
-                "ext-mbstring": "*",
-                "php": "^7.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "CoffeeCode\\Uploader\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Robson V. Leite",
-                    "email": "cursos@upinside.com.br",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Tiago Chini",
-                    "email": "tiago.chini@hotmail.com",
-                    "role": "collaborator"
-                }
-            ],
-            "description": "It is a easy PHP upload manager for images, files and media in your application",
-            "homepage": "http://www.upinside.com.br",
-            "keywords": [
-                "Coffeecode",
-                "Image upload",
-                "file upload",
-                "media upload",
-                "upinside",
-                "upload"
-            ],
-            "time": "2019-10-29T13:47:46+00:00"
         },
         {
             "name": "league/plates",
@@ -320,16 +223,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.1.5",
+            "version": "v6.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3"
+                "reference": "c5e61d0729507049cec9673aa1a679f9adefd683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a8bf068f64a580302026e484ee29511f661b2ad3",
-                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c5e61d0729507049cec9673aa1a679f9adefd683",
+                "reference": "c5e61d0729507049cec9673aa1a679f9adefd683",
                 "shasum": ""
             },
             "require": {
@@ -378,7 +281,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2020-03-14T14:23:48+00:00"
+            "time": "2019-12-10T11:17:38+00:00"
         }
     ],
     "packages-dev": [],
@@ -391,7 +294,8 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^7.1",
-        "ext-pdo": "^7.1"
+        "ext-pdo": "^7.1",
+        "ext-json": "*"
     },
     "platform-dev": []
 }
