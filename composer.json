@@ -1,6 +1,6 @@
 {
-    "name": "charleslb/sistemamuseu",
-    "description": "Projeto Estudantil",
+    "name": "chaleslb/sistemamuseu",
+    "description": "Site do Museu do Computador do ID Sudeste MG Juiz de Fora.",
     "minimum-stability": "stable",
     "authors": [{
         "name": "Charles Lelis Braga",
@@ -16,19 +16,18 @@
             "Source\\": "source/"
         },
         "files": [
-            "source/Boot/Config.php",
-            "source/Boot/Helpers.php"
+            "source/Config.php",
+            "source/Helpers.php"        
         ]
     },
     "require": {
         "php": "^7.1",
         "ext-pdo": "^7.1",
-        "phpmailer/phpmailer": "~6.0",
+        "ext-json":"*",
+        "phpmailer/phpmailer": "6.1.4",
         "league/plates": "v4.0.0-alpha",
-        "coffeecode/uploader": "^1.0",
-        "coffeecode/cropper": "^1.0",
         "coffeecode/optimizer": "^1.0",
-        "coffeecode/paginator": "^1.0",
-        "coffeecode/router": "^1.0"
+        "coffeecode/router": "^1.0",
+        "coffeecode/datalayer": "1.1.*"
     }
 }
