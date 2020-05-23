@@ -17,7 +17,9 @@ $route->namespace("Source\Controllers");
 
 $route->group(null);
 $route->get("/", "Web:home", "web.home");
-
+$route->get("/doacao", "Web:donation", "web.donation");
+$route->get("/acervo", "Web:collection", "web.collection");
+$route->get("/biblioteca", "Web:library", "web.library");
 
 
 //
