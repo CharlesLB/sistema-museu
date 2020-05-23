@@ -3,19 +3,19 @@
 <html>
 
 <head>
-	<title>Sistema do Museu</title>
+	<title><?=$title ?></title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="icon" href="<?= view("assets/images/icon.ico") ?> " type="image/x-icon" />
-	<link rel="stylesheet" href="<?= view("") ?> assets/css/main.css?version=3" />
+	<link rel="icon" href="<?= shared("/images/icon.ico", "web") ?> " type="image/x-icon" />
+	<link rel="stylesheet" href="<?= asset("/css/main.css?version=3", "web") ?> " />
 	<noscript>
-		<link rel="stylesheet" href="<?= view("") ?> assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="<?= asset("/css/noscript.css", "web") ?>" /></noscript>
 </head>
 
 <body class="homepage is-preload">
 	<div id="page-wrapper">
 
-        <?= $v->section("content"); ?>
+		<?= $v->section("content"); ?>
 
 		<!-- Footer -->
 		<div id="footer">
@@ -71,7 +71,7 @@
 						<!-- Copyright -->
 						<div class="copyright">
 							<ul class="menu">
-								<li><a href="https://github.com/CharlesLB">@CharlesLB</a></li>
+								<li><a href="<?= SITE["github"] ?>" target="_blank">@CharlesLB</a></li>
 								<li>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a></li>
 							</ul>
 						</div>
@@ -82,14 +82,14 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="<?= view("assets/js/jquery.min.js") ?>"></script>
-	<script src="<?= view("assets/js/jquery.dropotron.min.js") ?>"></script>
-	<script src="<?= view("assets/js/jquery.scrolly.min.js") ?>"></script>
-	<script src="<?= view("assets/js/jquery.scrollex.min.js") ?>"></script>
-	<script src="<?= view("assets/js/browser.min.js") ?>"></script>
-	<script src="<?= view("assets/js/breakpoints.min.js") ?>"></script>
-	<script src="<?= view("assets/js/util.js") ?>"></script>
-	<script src="<?= view("assets/js/main.js") ?>"></script>
+	<script src="<?= asset("/js/jquery.min.js", "web") ?>"></script>
+	<script src="<?= asset("/js/jquery.dropotron.min.js", "web") ?>"></script>
+	<script src="<?= asset("/js/jquery.scrolly.min.js", "web") ?>"></script>
+	<script src="<?= asset("/js/jquery.scrollex.min.js", "web") ?>"></script>
+	<script src="<?= asset("/js/browser.min.js", "web") ?>"></script>
+	<script src="<?= asset("/js/breakpoints.min.js", "web") ?>"></script>
+	<script src="<?= asset("/js/util.js", "web") ?>"></script>
+	<script src="<?= asset("/js/main.js", "web") ?>"></script>
 
 </body>
 
