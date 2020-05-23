@@ -20,6 +20,20 @@ class Web extends Controller
         ]);
     }
 
+    public function collection()
+    {       
+        echo $this->view->render("web/collection" , [
+            "title" => "Acervo | " . SITE["name"] 
+        ]);
+    }
+
+    public function library()
+    {       
+        echo $this->view->render("web/library" , [
+            "title" => "Biblioteca | " . SITE["name"] 
+        ]);
+    }
+
     // ─── ERROR ──────────────────────────────────────────────────────────────────────
 
     public function error(array $data): void
