@@ -8,7 +8,7 @@ code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
+tfoot, thead, tr, th, td, .card, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
@@ -19,7 +19,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside, details, figcaption, figure,
+.card, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
@@ -1772,21 +1772,21 @@ input, select, textarea {
 
 		}
 
-/* Sections/Article */
+/* Sections/.card */
 
-	section, article {
+	section, .card {
 		margin-bottom: 3em;
 	}
 
-		section > :last-child, section:last-child, article > :last-child, article:last-child {
+		section > :last-child, section:last-child, .card > :last-child, .card:last-child {
 			margin-bottom: 0;
 		}
 
-		section.special > header, section.special > footer, article.special > header, article.special > footer {
+		section.special > header, section.special > footer, .card.special > header, .card.special > footer {
 			text-align: center;
 		}
 
-	.row > section, .row > article {
+	.row > section, .row > .card {
 		margin-bottom: 0;
 	}
 
@@ -2662,7 +2662,7 @@ input, select, textarea {
 			padding: 0 2em 0 2em;
 		}
 
-		.carousel article {
+		.carousel .card {
 			display: inline-block;
 			width: 18em;
 			background: #fff;
@@ -2678,15 +2678,15 @@ input, select, textarea {
 			transition: .2s ease-in-out;
 		}
 
-		.carousel article:hover{
+		.carousel .card:hover{
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 
-			.carousel article.loading {
+			.carousel .card.loading {
 				opacity: 0;
 			}
 
-			.carousel article .image {
+			.carousel .card .image {
 				position: relative;
 				left: -1em;
 				top: 0;
@@ -2695,7 +2695,7 @@ input, select, textarea {
 				margin-bottom: 3em;
 			}
 
-			.carousel article p {
+			.carousel .card p {
 				text-align: center;
 			}
 
@@ -2720,7 +2720,7 @@ input, select, textarea {
 					padding: 0 1.5em 0 1.5em;
 				}
 
-				.carousel article {
+				.carousel .card {
 					width: 18em;
 					margin: 0 1.25em 0 0;
 				}
@@ -2806,7 +2806,7 @@ input, select, textarea {
 				padding: 1.25em 0 1.25em 0;
 			}
 
-				.carousel article {
+				.carousel .card {
 					width: 18em;
 					margin: 0 1em 0 0;
 				}
@@ -2845,17 +2845,17 @@ input, select, textarea {
 				margin-bottom: 6em;
 			}
 
-		/* Section/Article */
+		/* Section/.card */
 
-			section, article {
+			section, .card {
 				margin-bottom: 2em;
 			}
 
-				section:last-child, article:last-child {
+				section:last-child, .card:last-child {
 					margin-bottom: 0;
 				}
 
-			.row > section, .row > article {
+			.row > section, .row > .card {
 				margin-bottom: 2em;
 			}
 
@@ -3205,13 +3205,13 @@ input, select, textarea {
 					padding: 0 0.5em 0 0.5em;
 				}
 
-				.carousel article {
+				.carousel .card {
 					width: 14em;
 					padding-bottom: 2em;
 					margin: 0 0.5em 0 0;
 				}
 
-					.carousel article .image {
+					.carousel .card .image {
 						margin-bottom: 2em;
 					}
 

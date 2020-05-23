@@ -1,14 +1,8 @@
 <?php $v->layout("web/_theme"); ?>
 
 <div id="header">
-	<nav id="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#contact" class="scrolly">Doação</a></li>
-			<li><a href="right-sidebar.html">Acervo</a></li>
-			<li><a href="right-sidebar.html">Biblioteca</a></li>
-		</ul>
-	</nav>
+
+	<?php $v->insert("web/fragments/navbar"); ?>
 
 	<div class="inner">
 		<header>
@@ -20,8 +14,6 @@
 			<a href="#banner" class="button circled scrolly">Conhecer</a>
 		</footer>
 	</div>
-
-
 </div>
 
 <section id="banner">
@@ -36,16 +28,11 @@
 
 <section class="carousel">
 	<div class="reel">
-
-		<?php for ($i = 0; $i < 10; $i++) : ?>
-			<article>
-				<a href="" class="image featured"><img src="<?= asset("images/pic01.jpg", "web") ?>" alt="" /></a>
-				<header>
-					<h3><a href="#">Nome da peça</a></h3>
-				</header>
-				<p>Descrição bacana da peça.</p>
-			</article>
-		<?php endfor; ?>
+		<?php
+		for ($i = 0; $i < 10; $i++) :
+			$v->insert("web/fragments/card");
+		endfor;
+		?>
 	</div>
 
 	<footer class="center">
@@ -65,18 +52,13 @@
 	</footer>
 </section>
 
-
 <section class="carousel">
 	<div class="reel">
-		<?php for ($i = 0; $i < 10; $i++) : ?>
-			<article>
-				<a href="" class="image featured"><img src="<?= asset("images/pic01.jpg", "web") ?>" alt="" /></a>
-				<header>
-					<h3><a href="#">Nome da obra</a></h3>
-				</header>
-				<p>Descrição bacana da obra.</p>
-			</article>
-		<?php endfor; ?>
+		<?php
+		for ($i = 0; $i < 10; $i++) :
+			$v->insert("web/fragments/card");
+		endfor;
+		?>
 	</div>
 
 	<footer class="center">
@@ -84,8 +66,6 @@
 	</footer>
 </section>
 
-
-<!-- Main -->
 <div class="wrapper style2">
 	<article id="main" class="container special">
 		<header>

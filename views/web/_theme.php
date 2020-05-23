@@ -3,11 +3,12 @@
 <html>
 
 <head>
-	<title><?=$title ?></title>
+	<title><?= $title ?></title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" href="<?= shared("/images/icon.ico", "web") ?> " type="image/x-icon" />
-	<link rel="stylesheet" href="<?= asset("/css/main.css?version=3", "web") ?> " />
+	<link rel="stylesheet" href="<?= asset("/css/main.css?ve", "web") ?> " />
+	<link rel="stylesheet" href="<?= asset("/css/lightbox.min.css", "web") ?> " />
 	<noscript>
 		<link rel="stylesheet" href="<?= asset("/css/noscript.css", "web") ?>" /></noscript>
 </head>
@@ -83,6 +84,7 @@
 
 	<!-- Scripts -->
 	<script src="<?= asset("/js/jquery.min.js", "web") ?>"></script>
+	<script src="<?= asset("/js/lightbox.min.js", "web") ?>"></script>
 	<script src="<?= asset("/js/jquery.dropotron.min.js", "web") ?>"></script>
 	<script src="<?= asset("/js/jquery.scrolly.min.js", "web") ?>"></script>
 	<script src="<?= asset("/js/jquery.scrollex.min.js", "web") ?>"></script>
