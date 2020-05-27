@@ -23,6 +23,23 @@ $route->get("/biblioteca", "Web:library", "web.library");
 
 
 //
+// ─── LOGIN ──────────────────────────────────────────────────────────────────────
+//
+
+$route->get("/login", "Login:login", "login.login");
+$route->get("/esqueci-senha", "Login:forget", "login.forget");
+$route->get("/confirmar-codigo", "Login:code", "login.code");
+$route->get("/nova-senha", "Login:newPassword", "login.newPassword");
+
+
+//
+// ─── ADMIN ──────────────────────────────────────────────────────────────────────
+//
+
+
+
+
+//
 // ─── ERROR ──────────────────────────────────────────────────────────────────────
 //
 
