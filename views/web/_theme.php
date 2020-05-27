@@ -7,7 +7,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" href="<?= shared("/images/icon.ico", "web") ?> " type="image/x-icon" />
-	<link rel="stylesheet" href="<?= asset("/css/main.css?ve", "web") ?> " />
+	<link rel="stylesheet" href="<?= asset("/css/main.css?", "web") ?> " />
 	<link rel="stylesheet" href="<?= asset("/css/lightbox.min.css", "web") ?> " />
 	<noscript>
 		<link rel="stylesheet" href="<?= asset("/css/noscript.css", "web") ?>" /></noscript>

@@ -74,6 +74,5 @@
 				Ficamos aberto terça e quinta-feira das 14:00 às 18:00 horas!
 			</p>
 		</header>
-		<div class="image featured"><img src="images/pic06.jpg" alt="" /></div>
 	</article>
 </div>
