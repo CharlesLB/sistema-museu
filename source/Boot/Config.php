@@ -20,6 +20,21 @@ define("SITE", [
     "github" => "https://github.com/CharlesLB/sistema-museu"
 ]);
 
+//
+// ─── MAIL ───────────────────────────────────────────────────────────────────────
+//
+
+
+/* Secret Data */
+define("MAIL", [
+    "host" => "",
+    "port" => "",
+    "user" => "",
+    "passwd" => "",
+    "from_name" => "",
+    "from_email" => "",
+]);
+
 
 //
 // ─── DATABASE ───────────────────────────────────────────────────────────────────
@@ -29,7 +44,7 @@ define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
     "host" => "localhost",
     "port" => "3306",
-    "dbname" => "db_adedonha",
+    "dbname" => "db_museum",
     "username" => "root",
     "passwd" => "",
     "options" => [
