@@ -7,7 +7,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" href="<?= shared("/images/icon.ico", "web") ?> " type="image/x-icon" />
-	<link rel="stylesheet" href="<?= asset("/css/main.css?", "web") ?> " />
+	<link rel="stylesheet" href="<?= asset("/css/main.css?5", "web") ?> " />
+	<link rel="stylesheet" href="<?= shared("/css/globals.css") ?> " />
 	<link rel="stylesheet" href="<?= asset("/css/lightbox.min.css", "web") ?> " />
 	<noscript>
 		<link rel="stylesheet" href="<?= asset("/css/noscript.css", "web") ?>" /></noscript>
@@ -25,31 +26,34 @@
 					<div class="center">
 						<h2>Faça sua doação!</h2>
 					</div>
-					<form action="#" method="post">
+					<form action="<?= $router->route("mail.contact") ?>" method="post">
 						<div class="form-inline">
 							<div class="form-group">
 								<label for="name">Nome:</label>
-								<input type="text" id="name" placeholder="Nome Completo" required>
+								<input type="text" id="name" name="name" placeholder="Nome Completo">
 							</div>
 							<div class="form-group">
 								<label for="email">E-mail:</label>
-								<input type="email" id="email" placeholder="E-mail" required>
+								<input type="email" id="email" name="email" placeholder="E-mail">
 							</div>
 						</div>
 						<div class="form-inline">
 							<div class="form-group">
 								<label for="item">Qual peça gostaria de doar:</label>
-								<input type="text" id="item" placeholder="Peça a ser doada" required>
+								<input type="text" id="item" name="item" placeholder="Peça a ser doada">
 							</div>
 							<div class="form-group">
 								<label for="date">Data para entrega preferencial:</label>
-								<input type="text" id="date" placeholder="É obrigatório ser dia útil" required>
+								<input type="text" id="date" name="date" placeholder="Exemplo: Manhã do dia 08/03">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="textarea">Descrição Opcional:</label>
-							<textarea id="textarea">Aqui você pode fazer qualquer pergunta ou explicar qualquer outro problema</textarea>
+							<textarea id="textarea" name="message"></textarea>
 						</div>
+						
+						<div class="form_ajax" style="display: none"></div>
+
 						<footer class="center">
 							<button type="submit" class="button">Doar uma peça</button>
 						</footer>
@@ -92,6 +96,39 @@
 	<script src="<?= asset("/js/breakpoints.min.js", "web") ?>"></script>
 	<script src="<?= asset("/js/util.js", "web") ?>"></script>
 	<script src="<?= asset("/js/main.js", "web") ?>"></script>
+	<script>
+		$(function() {
+			$("form").submit(function(e) {
+				e.preventDefault();
+
+				var form = $(this);
+				var form_ajax = $(".form_ajax");
+
+				$.ajax({
+					url: form.attr("action"),
+					data: form.serialize(),
+					type: "post",
+					dataType: "json",
+					success: function(callback) {
+						if (callback.message) {
+							form_ajax.html(callback.message).fadeIn();
+						} else {
+							form_ajax.fadeOut(function() {
+								$(this).html("");
+							});
+						}
+						if(callback.success == true){
+							$("#name").val('');
+							$("#email").val('');
+							$("#date").val('');
+							$("#item").val('');
+							$("#textarea").val('');
+						}
+					}
+				});
+			});
+		});
+	</script>
 
 </body>
 
