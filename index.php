@@ -20,16 +20,18 @@ $route->get("/", "Web:home", "web.home");
 $route->get("/doacao", "Web:donation", "web.donation");
 $route->get("/acervo", "Web:collection", "web.collection");
 $route->get("/biblioteca", "Web:library", "web.library");
+$route->post("/contact", "MailController:contact", "mail.contact");
 
 
 //
 // ─── LOGIN ──────────────────────────────────────────────────────────────────────
 //
 
-$route->get("/login", "Login:login", "login.login");
-$route->get("/esqueci-senha", "Login:forget", "login.forget");
-$route->get("/confirmar-codigo", "Login:code", "login.code");
-$route->get("/nova-senha", "Login:newPassword", "login.newPassword");
+$route->group(null);
+$route->get("/login", "Auth:login", "auth.login");
+$route->get("/esqueci-senha", "Auth:forget", "auth.forget");
+$route->get("/confirmar-codigo", "Auth:code", "auth.code");
+$route->get("/nova-senha", "Auth:newPassword", "auth.newPassword");
 
 
 //
