@@ -4,7 +4,7 @@ namespace Source\Controllers;
 
 use Source\Core\Controller;
 
-class Login extends Controller
+class Auth extends Controller
 {
     public function __construct($router) {
         parent::__construct($router);

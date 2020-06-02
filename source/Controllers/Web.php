@@ -34,6 +34,13 @@ class Web extends Controller
         ]);
     }
 
+    public function login()
+    {       
+        echo $this->view->render("login/login" , [
+            "title" => "Login | " . SITE["name"] 
+        ]);
+    }
+
     // ─── ERROR ──────────────────────────────────────────────────────────────────────
 
     public function error(array $data): void
