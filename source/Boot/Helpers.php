@@ -47,7 +47,20 @@ function storage(string $path): ?string
     return URL["base"] . "/Storage/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
 }
 
+//
+// ─── DATE ───────────────────────────────────────────────────────────────────────
+//
 
+function dateFormat(string $date, bool $hour = false): string
+{
+    if ($hour) {
+        $date = date("d/m/Y H:i", strtotime($date));
+    } else {
+        $date = date("d/m/Y", strtotime($date));
+    }
+
+    return $date;
+}
 
 //
 // ─── MESSAGE ────────────────────────────────────────────────────────────────────
