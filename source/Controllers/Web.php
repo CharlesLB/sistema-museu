@@ -3,6 +3,7 @@
 namespace Source\Controllers;
 
 use Source\Core\Controller;
+use Source\Models\Category;
 use Source\Models\Mail;
 
 class Web extends Controller
@@ -63,16 +64,19 @@ class Web extends Controller
 
     public function collectionCategories(): void
     {
+        $category = new Category;
+        $categories = $category->show("collection");
 
         $mail = new Mail;
         $listMails = $mail->listUnreaded();
         $totalMails = $mail->countUnreaded();
 
-        echo $this->view->render("admin/collectionCategories", [
-            "title" => "Acervo | " . SITE["name"],
-            "page" => "project",
+        echo $this->view->render("admin/categories", [
+            "title" => "Categorias do Acervo",
+            "page" => "collection",
             "listMails" => $listMails,
-            "totalMails" => $totalMails
+            "totalMails" => $totalMails,
+            "categories" => $categories
         ]);
     }
 

@@ -10,8 +10,8 @@
             <form class="create-fish" action="<?= $router->route("fish.create"); ?>">
                 <div class="modal-body">
                     <div class="form-group d-none">
-                        <label for="specie-name-input">Id da espécie</label>
-                        <input type="text" class="form-control" name="specie_id" id="specie-name-input" placeholder="Nome da espécie" value="<?= $specie_id ?>">
+                        <label for="category-name-input">Id da espécie</label>
+                        <input type="text" class="form-control" name="category_id" id="category-name-input" placeholder="Nome da espécie" value="<?= $category_id ?>">
                     </div>
                     <div class="form-row">
                         <div class="col-md-6 mb-3">

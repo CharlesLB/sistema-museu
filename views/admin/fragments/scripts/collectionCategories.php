@@ -3,7 +3,7 @@
         $(".search").submit(function(e) {
             e.preventDefault();
 
-            var species = $(".species");
+            var categories = $(".categories");
             var form = $(this);
 
             $.ajax({
@@ -14,21 +14,21 @@
                 success: function(callback) {
 
                     if (callback.message) {
-                        species.html(callback.message).fadeIn();
+                        categories.html(callback.message).fadeIn();
                     } else {
-                        species.html(callback.species).fadeIn();
+                        categories.html(callback.categories).fadeIn();
                     }
                 }
             });
         });
 
-        $(".create-specie").submit(function(e) {
+        $(".create-category").submit(function(e) {
             e.preventDefault();
 
-            var species = $(".species");
+            var categories = $(".categories");
             var form = $(this);
             var alert = $(".alert-form-object");
-            var input = $("#specie-name-input");
+            var input = $("#category-name-input");
 
             $.ajax({
                 url: form.attr("action"),
@@ -40,7 +40,7 @@
 
                     if (callback.success) {
                         input.val("");
-                        species.prepend(callback.specie).fadeIn();
+                        categories.prepend(callback.category).fadeIn();
                         $('.modal').modal('hide');
                     }
                 }

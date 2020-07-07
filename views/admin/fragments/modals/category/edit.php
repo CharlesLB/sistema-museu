@@ -1,21 +1,21 @@
-<div class="modal fade" id="edit-specie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit-category" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="editSpecieLabel">Editar espécie <?= $specie->name ?></h5>
+                <h5 class="modal-title" id="editcategoryLabel">Editar espécie <?= $category->name ?></h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form class="edit-specie" action="<?= $router->route("specie.edit"); ?>">
+            <form class="edit-category" action="<?= $router->route("category.edit"); ?>">
                 <div class="modal-body">
                     <div class="form-group d-none">
-                        <label for="specie-id-input-edit">ID</label>
-                        <input type="text" class="form-control specie-input" name="id" id="specie-id-input-edit" placeholder="ID" value="<?= $specie->id ?>">
+                        <label for="category-id-input-edit">ID</label>
+                        <input type="text" class="form-control category-input" name="id" id="category-id-input-edit" placeholder="ID" value="<?= $category->id ?>">
                     </div>
                     <div class="form-group">
-                        <label for="specie-name-input-edit">Nome da espécie</label>
-                        <input type="text" class="form-control specie-input" name="name" id="specie-name-input-edit" placeholder="Nome da espécie" value="<?= $specie->name ?>">
+                        <label for="category-name-input-edit">Nome da espécie</label>
+                        <input type="text" class="form-control category-input" name="name" id="category-name-input-edit" placeholder="Nome da espécie" value="<?= $category->name ?>">
                     </div>
                 </div>
                 <div class="modal-footer">

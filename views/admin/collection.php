@@ -1,31 +1,93 @@
 <?php $v->layout('admin/_theme'); ?>
 
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Espécies</h1>
-    <div>
-        <form class="d-none d-sm-inline-block form-inline navbar-search mr-2 search" action="<?= $router->route("specie.search"); ?>">
-            <div class="input-group">
-                <input type="text" name="search" class="form-control border-0 small" id="specieInput" placeholder="Pesquisar espécie" aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit">
-                        <i class="fas fa-search fa-sm"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
+<?php $v->start("styles"); ?>
+<link href="<?= asset("css/datatables.min.css", "admin") ?>" rel="stylesheet">
+<?php $v->end(); ?>
 
-        <button class="btn btn-primary mb-1" type="button" data-toggle="modal" data-target="#create-specie">
-            Adicionar espécie
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="d-flex flex-row">
+        <a href="<?= url("/admin/projeto") ?>" class="btn btn-primary mr-3">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="h3 mb-0 text-gray-800"><span id="categoryName"><?= $category->name ?></span></h1>
+    </div>
+    <div>
+        <button class="btn btn-primary mb-1" type="button" data-toggle="modal" data-target="#edit-category">
+            Editar Espécie
+        </button>
+        <button class="btn btn-danger mb-1" type="button" data-toggle="modal" data-target="#delete-category">
+            <i class="fas fa-trash"></i>
         </button>
     </div>
 </div>
 
-<!-- species -->
-<?= $v->insert("admin/fragments/pages/project/species", ["species" => $species]) ?>
+<!-- cards -->
+<div class="row">
+    <?php $v->insert("admin/fragments/widgets/general/cards/bgCard", [
+        "title" => "Dados",
+        "cardBody" => "Total de Peixes: <span id='totalFish'>4</span> <br><br><br>",
+        "icon" => "fish"
+    ]) ?>
+
+    <?php $v->insert("admin/fragments/widgets/general/cards/bgCard", [
+        "title" => "Peso e altura",
+        "cardBody" => "
+            Peso médio : <span id='mediaWeight'>4</span>  <br> ",
+        "icon" => "ruler"
+    ]) ?>
+</div>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header d-sm-flex align-items-center justify-content-between mb-4">
+        <h6 class="m-0 font-weight-bold text-primary">Peixes</h6>
+        <button class="btn btn-primary mb-1" type="button" data-toggle="modal" data-target="#create-fish">
+            Adicionar peixe
+        </button>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Sexo</th>
+                        <th>Comprimento Padrão</th>
+                        <th>Comprimento Total</th>
+                        <th>Peso</th>
+                        <th>Editar</th>
+                        <th>Deletar</th>
+                    </tr>
+                </thead>
+                <tbody id="fishes">
+                    <?php if ($fishes) {
+                        foreach ($fishes as $selectedFish) {
+                            $v->insert("admin/fragments/widgets/category/tableLine", ["fish" => $selectedFish]);
+                        }
+                    } ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 
 <!-- Modals -->
-<?php $v->insert("admin/fragments/modals/specie/create") ?>
+<?php $v->start("modals");
+$v->insert("admin/fragments/modals/category/edit", ["category" => $category]);
+$v->insert("admin/fragments/modals/category/delete", ["category" => $category]);
+$v->insert("admin/fragments/modals/fish/create", ["category_id" => $category->id]);
+$v->insert("admin/fragments/modals/fish/edit");
+$v->insert("admin/fragments/modals/fish/delete");
+$v->end(); ?>
 
-<?php $v->start("scripts"); ?>
-    <?php $v->insert("admin/fragments/scripts/project") ?>
+
+<?php $v->start("scripts");
+
+$v->insert("admin/fragments/scripts/category") ?>
+
+<!-- DataTables -->
+<script src="<?= asset("scripts/datatables.min.js", "admin") ?>"></script>
+<script src="<?= asset("scripts/datatables.bootstrap.min.js", "admin") ?>"></script>
+
 <?php $v->end(); ?>

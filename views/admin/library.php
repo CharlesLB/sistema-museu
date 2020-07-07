@@ -9,13 +9,13 @@
         <a href="<?= url("/admin/projeto") ?>" class="btn btn-primary mr-3">
             <i class="fas fa-arrow-left"></i>
         </a>
-        <h1 class="h3 mb-0 text-gray-800"><span id="specieName"><?= $specie->name ?></span></h1>
+        <h1 class="h3 mb-0 text-gray-800"><span id="categoryName"><?= $category->name ?></span></h1>
     </div>
     <div>
-        <button class="btn btn-primary mb-1" type="button" data-toggle="modal" data-target="#edit-specie">
+        <button class="btn btn-primary mb-1" type="button" data-toggle="modal" data-target="#edit-category">
             Editar Espécie
         </button>
-        <button class="btn btn-danger mb-1" type="button" data-toggle="modal" data-target="#delete-specie">
+        <button class="btn btn-danger mb-1" type="button" data-toggle="modal" data-target="#delete-category">
             <i class="fas fa-trash"></i>
         </button>
     </div>
@@ -25,16 +25,14 @@
 <div class="row">
     <?php $v->insert("admin/fragments/widgets/general/cards/bgCard", [
         "title" => "Dados",
-        "cardBody" => "Total de Peixes: <span id='totalFish'>{$data["total"]}</span> <br><br><br>",
+        "cardBody" => "Total de Peixes: <span id='totalFish'>4</span> <br><br><br>",
         "icon" => "fish"
     ]) ?>
 
     <?php $v->insert("admin/fragments/widgets/general/cards/bgCard", [
         "title" => "Peso e altura",
         "cardBody" => "
-            Peso médio : <span id='mediaWeight'>" . floatFormat($data["mediaWeight"]) . "</span>  <br> 
-            Comprimento total média: <span id='mediaTotalLength'>" . floatFormat($data["mediaTotalLength"]) . "</span> <br> 
-            Comprimento padrão média: <span id='mediaDefaultLength'>" . floatFormat($data["mediaDefaultLength"]) . "</span> <br>",
+            Peso médio : <span id='mediaWeight'>4</span>  <br> ",
         "icon" => "ruler"
     ]) ?>
 </div>
@@ -64,7 +62,7 @@
                 <tbody id="fishes">
                     <?php if ($fishes) {
                         foreach ($fishes as $selectedFish) {
-                            $v->insert("admin/fragments/widgets/specie/tableLine", ["fish" => $selectedFish]);
+                            $v->insert("admin/fragments/widgets/category/tableLine", ["fish" => $selectedFish]);
                         }
                     } ?>
                 </tbody>
@@ -76,9 +74,9 @@
 
 <!-- Modals -->
 <?php $v->start("modals");
-$v->insert("admin/fragments/modals/specie/edit", ["specie" => $specie]);
-$v->insert("admin/fragments/modals/specie/delete", ["specie" => $specie]);
-$v->insert("admin/fragments/modals/fish/create", ["specie_id" => $specie->id]);
+$v->insert("admin/fragments/modals/category/edit", ["category" => $category]);
+$v->insert("admin/fragments/modals/category/delete", ["category" => $category]);
+$v->insert("admin/fragments/modals/fish/create", ["category_id" => $category->id]);
 $v->insert("admin/fragments/modals/fish/edit");
 $v->insert("admin/fragments/modals/fish/delete");
 $v->end(); ?>
@@ -86,7 +84,7 @@ $v->end(); ?>
 
 <?php $v->start("scripts");
 
-$v->insert("admin/fragments/scripts/specie") ?>
+$v->insert("admin/fragments/scripts/category") ?>
 
 <!-- DataTables -->
 <script src="<?= asset("scripts/datatables.min.js", "admin") ?>"></script>

@@ -47,15 +47,15 @@
     $(function() {
 
         //
-        // ─── SPECIE ──────────────────────────────────────────────────────
+        // ─── category ──────────────────────────────────────────────────────
         //
 
-        $(".edit-specie").on("submit",function(e) {
+        $(".edit-category").on("submit",function(e) {
             e.preventDefault();
 
             var form = $(this);
             var alert = $(".alert-form-object");
-            var title = $("#specieName")
+            var title = $("#categoryName")
 
             $.ajax({
                 url: form.attr("action"),
@@ -66,14 +66,14 @@
                     alert.html(callback.alert).fadeIn();
 
                     if (callback.success) {
-                        title.html(callback.specieName);
+                        title.html(callback.categoryName);
                         $('.modal').modal('hide');
                     }
                 }
             });
         });
 
-        $(".delete-specie").on("submit", function(e) {
+        $(".delete-category").on("submit", function(e) {
             e.preventDefault();
 
             var form = $(this);

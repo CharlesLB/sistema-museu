@@ -11385,14 +11385,14 @@ body.sidebar-toggled footer.sticky-footer {
  * ─── MY STYLES ──────────────────────────────────────────────────────────────────
  */
 
- /* Specie Card */
-.specie,
-.specie .card{
+ /* category Card */
+.category,
+.category .card{
   text-decoration: none !important;
   transition: .2s ease-in-out !important;
 }
 
-.specie .card:hover {
+.category .card:hover {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 0 20px 50px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
