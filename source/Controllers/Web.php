@@ -3,6 +3,7 @@
 namespace Source\Controllers;
 
 use Source\Core\Controller;
+use Source\Models\Mail;
 
 class Web extends Controller
 {
@@ -40,6 +41,41 @@ class Web extends Controller
             "title" => "Login | " . SITE["name"] 
         ]);
     }
+
+
+    // ─── ADMIN ──────────────────────────────────────────────────────────────────────
+
+    public function admin(): void
+    {
+        $mail = new Mail;
+        $listMails = $mail->listUnreaded();
+        $totalMails = $mail->countUnreaded();
+        $totalReadedMails = $mail->find()->count();
+
+        echo $this->view->render("admin/dashboard", [
+            "title" => "Dashboard | " . SITE["name"],
+            "page" => "dashboard",
+            "listMails" => $listMails,
+            "totalMails" => $totalMails,
+            "totalReadedMails" => $totalReadedMails
+        ]);
+    } 
+
+    public function collectionCategories(): void
+    {
+
+        $mail = new Mail;
+        $listMails = $mail->listUnreaded();
+        $totalMails = $mail->countUnreaded();
+
+        echo $this->view->render("admin/collectionCategories", [
+            "title" => "Acervo | " . SITE["name"],
+            "page" => "project",
+            "listMails" => $listMails,
+            "totalMails" => $totalMails
+        ]);
+    }
+
 
     // ─── ERROR ──────────────────────────────────────────────────────────────────────
 

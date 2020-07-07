@@ -32,9 +32,7 @@
     <?php $v->insert("admin/fragments/widgets/general/cards/bgCard", [
         "title" => "Peso e altura",
         "cardBody" => "
-            Peso médio : <span id='mediaWeight'>" . floatFormat($data["mediaWeight"]) . "</span>  <br> 
-            Comprimento total média: <span id='mediaTotalLength'>" . floatFormat($data["mediaTotalLength"]) . "</span> <br> 
-            Comprimento padrão média: <span id='mediaDefaultLength'>" . floatFormat($data["mediaDefaultLength"]) . "</span> <br>",
+            Peso médio : <span id='mediaWeight'>4</span>  <br> ",
         "icon" => "ruler"
     ]) ?>
 </div>

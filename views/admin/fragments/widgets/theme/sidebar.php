@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= url("/admin") ?>">
-        <div class="sidebar-brand-text mx-3">Laboratório de <sup>Biologia</sup></div>
+        <div class="sidebar-brand-text mx-3">Museu do Computador</div>
     </a>
 
     <hr class="sidebar-divider my-0">
@@ -19,12 +19,25 @@
         Projeto
     </div>
 
-    <li class="nav-item <?= ($page == "project") ? "active" : ""; ?>">
-        <a class="nav-link" href="<?= url("/admin/projeto") ?>">
-            <i class="fas fa-fw fa-fish"></i>
-            <span>Espécies</span>
+    <li class="nav-item <?= ($page == "collection") ? "active" : ""; ?>">
+        <a class="nav-link" href="<?= url("/admin/acervo") ?>">
+            <i class="fas fa-fw fa-save"></i>
+            <span>Acervo</span>
         </a>
     </li>
+
+    <li class="nav-item <?= ($page == "library") ? "active" : ""; ?>">
+        <a class="nav-link" href="<?= url("/admin/biblioteca") ?>">
+            <i class="fas fa-fw fa-book"></i>
+            <span>Biblioteca</span>
+        </a>
+    </li>
+
+    <hr class="sidebar-divider">
+
+    <div class="sidebar-heading">
+        Contato
+    </div>
 
     <li class="nav-item <?= ($page == "mails") ? "active" : ""; ?>">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">

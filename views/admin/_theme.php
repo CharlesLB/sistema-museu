@@ -8,7 +8,7 @@
   <link rel="icon" href="<?= shared("/images/icon.ico") ?> " type="image/x-icon" />
 
   <link href="<?= shared("vendor/fontawesome/css/all.css") ?>" rel="stylesheet">
-  <link href="<?= asset("css/styles.css?ess", "admin") ?>" rel="stylesheet">
+  <link href="<?= asset("css/styles.css?ss", "admin") ?>" rel="stylesheet">
   <?= $v->section("styles"); ?>
 
   <title><?= $title ?></title>

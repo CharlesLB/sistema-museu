@@ -7,15 +7,21 @@
 <!-- cards -->
 <div class="row">
     <?php
-    $v->insert("admin/fragments/widgets/general/cards/bgCard", [
-        "title" => "Espécie",
-        "cardBody" => "Espécies : {$totalSpecie} <br> Peixes : {$totalFish}<br>",
-        "icon" => "fish"
+    $v->insert("admin/fragments/widgets/general/cards/smCard", [
+        "title" => "Acervo",
+        "cardBody" => "Categorias : 1 <br> Peças : 2 <br>",
+        "icon" => "save"
     ]);
 
-    $v->insert("admin/fragments/widgets/general/cards/bgCard", [
+    $v->insert("admin/fragments/widgets/general/cards/smCard", [
+        "title" => "Biblioteca",
+        "cardBody" => "Categorias : 2 <br> Obras : 3 <br>",
+        "icon" => "book"
+    ]);
+
+    $v->insert("admin/fragments/widgets/general/cards/smCard", [
         "title" => "Mensagens",
-        "cardBody" => "Não lidas : {$totalMails} <br> Total : {$totalReadedMails} <br>",
+        "cardBody" => "Não lidas : 2 <br> Total : 3 <br>",
         "icon" => "envelope"
     ]);
 
