@@ -105,7 +105,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; | <a href="<?= SITE["github"] ?>">@CharlesLB</a> e Viviane Serafim</span>
+            <span>Copyright &copy; | <a href="<?= SITE["github"] ?>">@CharlesLB</a></span>
           </div>
         </div>
       </footer>

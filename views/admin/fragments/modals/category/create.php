@@ -9,13 +9,12 @@
             </div>
             <form class="create-category" action="<?= $router->route("category.create"); ?>">
                 <div class="modal-body">
-                    <div class="form-group">
-                        <label for="category-type-input">Nome da espécie</label>
+                    <div class="form-group d-none">
                         <input type="text" class="form-control" name="type" id="category-type-input" value="<?= $type ?>">
                     </div>
                     <div class="form-group">
                         <label for="category-name-input">Nome da categoria</label>
-                        <input type="text" class="form-control" name="name" id="category-name-input" placeholder="Nome da espécie">
+                        <input type="text" class="form-control" name="name" id="category-name-input" placeholder="Nome da categoria">
                     </div>
                 </div>
                 <div class="modal-footer">
